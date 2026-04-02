@@ -93,3 +93,9 @@ html {
   padding:60px 20px;
   border-radius:12px;
 }
+
+nav {
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
