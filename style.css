@@ -8,8 +8,7 @@ body {
 
 /* ===== Shared Hero Header ===== */
 .hero {
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-              url('images/Campphoto.jpeg') center/cover no-repeat;
+  background: url('images/Campphoto.jpeg');
   color: white;
   padding: 60px 20px;
   text-align: center;
