@@ -7,11 +7,13 @@ body {
 }
 
 /* ===== Shared Hero Header ===== */
-.hero {
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-              url('images/Campphoto.jpeg') center/cover no-repeat;
+header.hero {
+  background:
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("images/Campphoto.jpeg") center/cover no-repeat;
+
   color: white;
-  padding: 60px 20px;
+  padding: 80px 20px;
   text-align: center;
 }
 
