@@ -6,15 +6,19 @@ body {
   color: #333;
 }
 
-/* ===== Shared Hero Header ===== */
+/* ===== HERO HEADER ===== */
 header.hero {
-  background:
+  background-image:
     linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-    url("images/Campphoto.jpeg") center/cover no-repeat;
+    url("images/Campphoto.jpeg");
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 
   color: white;
-  padding: 80px 20px;
   text-align: center;
+  padding: 80px 20px;
 }
 
 /* Navigation */
