@@ -14,7 +14,7 @@
     <div class="nav-inner">
 
       <a href="index.html" class="nav-logo">
-        <img src="images/risetogethermny.PNG" alt="Rise Together MN logo">
+        <img src="images/risetogethermny.png" alt="Rise Together MN logo">
         <span>Rise Together MN</span>
       </a>
 
@@ -45,14 +45,82 @@
     </div>
   </header>
 
-  <!-- ===== WELCOME ===== -->
-  <section>
-    <h2>Welcome</h2>
-    <p>
-      Rise Together MN's mission is to develop and empower young people from
-      underrepresented communities to acquire the tools and resources needed
-      to achieve their aspirations.
-    </p>
+  <!-- ===== IMPACT STATS ===== -->
+  <section class="impact-bar">
+    <div class="impact-grid">
+      <div class="impact-stat">
+        <span class="impact-number">100+</span>
+        <span class="impact-label">Youth Served</span>
+      </div>
+      <div class="impact-stat">
+        <span class="impact-number">100+</span>
+        <span class="impact-label">Volunteers Involved</span>
+      </div>
+      <div class="impact-stat">
+        <span class="impact-number">4</span>
+        <span class="impact-label">Core Programs</span>
+      </div>
+      <div class="impact-stat">
+        <span class="impact-number">MN</span>
+        <span class="impact-label">Community Rooted</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROGRAMS ===== -->
+  <section class="programs-section">
+    <div class="section-header">
+      <h2>What We Do</h2>
+      <p>Our programs are built around the needs of young people in our community.</p>
+    </div>
+
+    <div class="card-grid">
+
+      <div class="program-card">
+        <div class="card-img-wrap">
+          <img src="images/Campphoto.jpeg" alt="Mentorship program" class="card-img">
+        </div>
+        <div class="card-body">
+          <h3>Mentorship</h3>
+          <p>Connecting youth with caring adult mentors who guide, support, and invest in their futures.</p>
+        </div>
+      </div>
+
+      <div class="program-card">
+        <div class="card-img-wrap placeholder-img">
+          <span class="placeholder-text">Photo coming soon</span>
+        </div>
+        <div class="card-body">
+          <h3>Leadership Development</h3>
+          <p>Building the next generation of community leaders through workshops, training, and real-world experience.</p>
+        </div>
+      </div>
+
+      <div class="program-card">
+        <div class="card-img-wrap placeholder-img">
+          <span class="placeholder-text">Photo coming soon</span>
+        </div>
+        <div class="card-body">
+          <h3>Sports &amp; Recreation</h3>
+          <p>Using athletics to teach teamwork, discipline, and healthy habits while keeping youth engaged and active.</p>
+        </div>
+      </div>
+
+      <div class="program-card">
+        <div class="card-img-wrap placeholder-img">
+          <span class="placeholder-text">Photo coming soon</span>
+        </div>
+        <div class="card-body">
+          <h3>Community Events</h3>
+          <p>Bringing families and neighbors together through cultural celebrations, gatherings, and shared experiences.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section-cta">
+      <a href="programs.html" class="btn btn-blue">See All Programs</a>
+    </div>
   </section>
 
   <!-- ===== MISSION ===== -->
@@ -87,7 +155,6 @@
       toggle.setAttribute('aria-expanded', isOpen);
     });
 
-    // Close menu when a link is clicked (good UX on mobile)
     links.querySelectorAll('a').forEach(function (link) {
       link.addEventListener('click', function () {
         links.classList.remove('open');
