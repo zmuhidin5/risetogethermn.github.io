@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Support Rise Together MN — become a member or make a donation to help empower Muslim youth across Minnesota.">
+  <title>Membership & Donate | Rise Together MN</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+  <!-- ===== NAVBAR ===== -->
+  <nav aria-label="main navigation">
+    <div class="nav-inner">
+ 
+      <a href="index.html" class="nav-logo">
+        <img src="images/risetogethermny.PNG" alt="Rise Together MN logo">
+        <span>Rise Together MN</span>
+      </a>
+ 
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+ 
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="membership.html" class="nav-active">Support Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+ 
+    </div>
+  </nav>
+ 
+  <!-- ===== PAGE HERO ===== -->
+  <header class="page-hero">
+    <div class="hero-content">
+      <h1>Support Rise Together MN</h1>
+      <p>Your support helps us invest in Muslim youth and strengthen our community.</p>
+    </div>
+  </header>
+ 
+  <!-- ===== BODY ===== -->
+  <div class="support-wrapper">
+ 
+    <!-- ===== MEMBERSHIP ===== -->
+    <div class="support-section">
+      <div class="support-section-inner">
+ 
+        <div class="support-text">
+          <div class="section-tag">Membership</div>
+          <h2>Become a Member</h2>
+          <p>
+            Joining Rise Together MN means more than paying a fee — it means standing
+            with a brotherhood committed to growing closer to Allah and lifting up
+            our community. Your membership directly funds our programs, events, and
+            the youth we serve.
+          </p>
+ 
+          <div class="membership-card">
+            <div class="membership-card-header">
+              <span class="membership-tier">General Membership</span>
+              <div class="membership-price">
+                <span class="price-amount">$20</span>
+                <span class="price-period">/ month</span>
+              </div>
+            </div>
+            <ul class="membership-perks">
+              <li>&#10003; Full access to all Rise Together MN programs</li>
+              <li>&#10003; Invitations to exclusive member events</li>
+              <li>&#10003; Be part of a brotherhood rooted in faith</li>
+              <li>&#10003; Direct impact on Muslim youth in Minnesota</li>
+              <li>&#10003; Monthly updates on our community work</li>
+            </ul>
+            <a href="https://buy.stripe.com/8x2aEXfKvel908r6El7Re00"
+               class="btn btn-blue btn-full"
+               target="_blank"
+               rel="noopener">
+              Join Now — $20/month
+            </a>
+            <p class="membership-note">Secured and processed by Stripe. Cancel anytime.</p>
+          </div>
+        </div>
+ 
+        <div class="support-image-col">
+          <div class="program-placeholder" style="height: 100%; min-height: 380px;">
+            <span class="placeholder-icon">&#128101;</span>
+            <span>Add a photo here</span>
+          </div>
+        </div>
+ 
+      </div>
+    </div>
+ 
+    <!-- ===== DIVIDER ===== -->
+    <div class="support-divider">
+      <span>or support with a one-time gift</span>
+    </div>
+ 
+    <!-- ===== DONATION ===== -->
+    <div class="support-section">
+      <div class="support-section-inner reverse">
+ 
+        <div class="support-image-col">
+          <div class="program-placeholder" style="height: 100%; min-height: 340px;">
+            <span class="placeholder-icon">&#10084;&#65039;</span>
+            <span>Add a photo here</span>
+          </div>
+        </div>
+ 
+        <div class="support-text">
+          <div class="section-tag">Donate</div>
+          <h2>Make a Donation</h2>
+          <p>
+            Every contribution — no matter the size — goes directly toward empowering
+            Muslim youth in Minnesota. Your sadaqah helps us run programs, host events,
+            and show up for our community. JazakAllahu Khairan for your generosity.
+          </p>
+ 
+          <div class="donation-amounts">
+            <button class="amount-btn" onclick="setAmount(10)">$10</button>
+            <button class="amount-btn" onclick="setAmount(25)">$25</button>
+            <button class="amount-btn" onclick="setAmount(50)">$50</button>
+            <button class="amount-btn other-btn" onclick="setAmount('other')">Other</button>
+          </div>
+ 
+          <p class="donation-note" id="donationNote">Select an amount above then click donate.</p>
+ 
+          <!-- REPLACE THE # BELOW WITH YOUR STRIPE DONATION LINK WHEN READY -->
+          <a href="#"
+             class="btn btn-blue btn-full"
+             id="donateBtn"
+             target="_blank"
+             rel="noopener"
+             onclick="handleDonate(event)">
+            Donate Now
+          </a>
+ 
+          <p class="membership-note">Secured and processed by Stripe.</p>
+        </div>
+ 
+      </div>
+    </div>
+ 
+    <!-- ===== BOTTOM MESSAGE ===== -->
+    <div class="support-message">
+      <div class="support-message-inner">
+        <span class="support-message-icon">&#9733;</span>
+        <div>
+          <h3>Your support is sadaqah jaariyah</h3>
+          <p>
+            Every dollar you give continues to benefit Muslim youth long after the
+            moment of giving. We are grateful for every member and donor who believes
+            in this work. May Allah accept it from you and bless you and your family.
+          </p>
+        </div>
+      </div>
+    </div>
+ 
+  </div>
+ 
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>&copy; 2026 Rise Together MN</p>
+  </footer>
+ 
+  <!-- ===== SCRIPTS ===== -->
+  <script>
+    // Navbar hamburger
+    const toggle = document.querySelector('.nav-toggle');
+    const links  = document.querySelector('.nav-links');
+    toggle.addEventListener('click', function () {
+      const isOpen = links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', isOpen);
+    });
+    links.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        links.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+ 
+    // Donation amount selection
+    var selectedAmount = null;
+ 
+    // REPLACE THIS WITH YOUR STRIPE DONATION LINK WHEN READY
+    var stripeDonatioLink = '#';
+ 
+    function setAmount(amount) {
+      selectedAmount = amount;
+      document.querySelectorAll('.amount-btn').forEach(function(btn) {
+        btn.classList.remove('active');
+      });
+      event.target.classList.add('active');
+ 
+      if (amount === 'other') {
+        document.getElementById('donationNote').textContent = 'You will be able to enter any amount on the next page.';
+      } else {
+        document.getElementById('donationNote').textContent = '$' + amount + ' selected — click Donate Now to continue.';
+      }
+    }
+ 
+    function handleDonate(e) {
+      if (stripeDonatioLink === '#') {
+        e.preventDefault();
+        document.getElementById('donationNote').textContent = 'Donation link coming soon — check back shortly!';
+        document.getElementById('donationNote').style.color = '#c0392b';
+      }
+    }
+  </script>
+ 
+</body>
+</html>
