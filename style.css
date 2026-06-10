@@ -2375,3 +2375,253 @@ a.info-card-value:hover {
     grid-template-columns: 1fr;
   }
 }
+
+/* ===== Support Page — add these to your style.css ===== */
+
+/* Photo banner */
+.support-photo-banner {
+  position: relative;
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+}
+
+.support-photo-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.support-photo-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(8, 30, 63, 0.82));
+  padding: 32px 40px 24px;
+  text-align: center;
+}
+
+.support-photo-overlay p {
+  color: white;
+  font-size: 1rem;
+  font-style: italic;
+  opacity: 0.92;
+  margin: 0;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Wrapper */
+.support-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 48px 24px 60px;
+}
+
+/* Intro text */
+.support-intro {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.support-intro h2 {
+  font-size: 1.9rem;
+  color: #083c8a;
+  margin: 0 0 10px;
+}
+
+.support-intro p {
+  color: #666;
+  font-size: 1rem;
+  max-width: 640px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* Side-by-side cards */
+.support-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  margin-bottom: 40px;
+}
+
+.support-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.07);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.support-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.1);
+}
+
+/* Card top colored band */
+.support-card-top {
+  padding: 32px 28px 24px;
+  text-align: center;
+  color: white;
+}
+
+.membership-top {
+  background: linear-gradient(135deg, #083c8a 0%, #0f5fc4 100%);
+}
+
+.donation-top {
+  background: linear-gradient(135deg, #1a6b3c 0%, #27a05a 100%);
+}
+
+.support-card-icon {
+  font-size: 2.4rem;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.support-card-top h3 {
+  font-size: 1.4rem;
+  margin: 0 0 14px;
+  color: white;
+}
+
+.support-card-price {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 5px;
+  background: rgba(255,255,255,0.15);
+  border-radius: 99px;
+  padding: 6px 18px;
+}
+
+.support-card-price .price-amount {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: white;
+}
+
+.support-card-price .price-period {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.8);
+}
+
+/* Card body */
+.support-card-body {
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.support-card-body p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin: 0 0 20px;
+}
+
+.support-perks {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  flex: 1;
+}
+
+.support-perks li {
+  font-size: 0.88rem;
+  color: #444;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  line-height: 1.5;
+}
+
+.support-perks li::before {
+  content: '✓';
+  color: #083c8a;
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.support-card-note {
+  text-align: center;
+  font-size: 0.75rem;
+  color: #aaa;
+  margin: 10px 0 0;
+}
+
+/* Bottom message */
+.support-message {
+  background: linear-gradient(135deg, #083c8a 0%, #0f5fc4 100%);
+  border-radius: 12px;
+  padding: 36px 40px;
+  box-shadow: 0 6px 18px rgba(8,60,138,0.2);
+}
+
+.support-message-inner {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  color: white;
+}
+
+.support-message-icon {
+  font-size: 2.2rem;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+.support-message-inner h3 {
+  font-size: 1.3rem;
+  margin: 0 0 10px;
+  color: white;
+}
+
+.support-message-inner p {
+  font-size: 0.95rem;
+  opacity: 0.9;
+  line-height: 1.75;
+  margin: 0;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .support-photo-banner {
+    height: 220px;
+  }
+
+  .support-photo-overlay {
+    padding: 20px 20px 16px;
+  }
+
+  .support-photo-overlay p {
+    font-size: 0.85rem;
+  }
+
+  .support-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .support-message {
+    padding: 28px 20px;
+  }
+
+  .support-message-inner {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .support-wrapper {
+    padding: 28px 16px 40px;
+  }
+}
